@@ -44,13 +44,12 @@ body {
 main {
   word-spacing: .1ch;
   padding-top: 1.5rem;
-
 }
 
 header {
   background-color: var(--col-secondary);
   color: var(--col-primary);
-  border-bottom: 1px solid var(--col-light);
+  border-bottom: 0.1rem solid var(--col-primary);
   position: fixed;
   top: 0;
   width: 100%;
@@ -58,7 +57,6 @@ header {
 footer {
   background-color: var(--col-dark);
   color: var(--col-light);
-  border-top:  1px solid var(--col-light);
 }
 
 header nav {
@@ -103,30 +101,12 @@ article {
 
 section {
 	font-size: var(--sz-5);
-	border-top: 1px solid var(--col-light);
+	border-top: 1px solid var(--col-primary);
 }
 section * {
 	max-width: var(--txt-width);
 	margin: 0 auto;
 }
-
-/*section:nth-child(odd) {
-	background-color: var(--col-primary);
-	color: var(--col-light);
-}
-
-section:nth-child(odd) a {
-	color: var(--col-secondary);
-}
-
-section:nth-child(even) {
-	background-color: var(--col-dark);
-	color: var(--col-secondary);
-}
-
-section:nth-child(even) a {
-	color: var(--col-light);
-}*/
 
 p {
 	margin-bottom: var(--m);
@@ -159,7 +139,7 @@ h3 {
 }
 
 [aria-label="Main"] {
-  border-bottom: 2px solid var(--col-light);
+  border-bottom: 2px solid var(--col-primary);
 }
 
 [aria-label="Main"] > a {
@@ -172,6 +152,7 @@ h3 {
 	background: center / cover no-repeat url(minneapolis.jpg), var(--col-light);
 	padding: var(--sz-5);
 	margin-bottom: 0;
+	border-bottom: 0.1rem solid var(--col-primary);
 }
 
 @media(max-width:50rem) {
@@ -190,6 +171,6 @@ h3 {
   }
 
 	#intro {
-		min-height: 85vh;
+		min-height: 80vh;
 	}
 }
