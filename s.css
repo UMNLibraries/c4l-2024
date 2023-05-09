@@ -47,8 +47,9 @@ nav {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+	border-bottom: 0.2rem solid var(--col-primary);
 }
-nav > a {padding: var(--sz-3) var(--sz-4);text-decoration: none;}
+nav > a {padding: var(--sz-3) var(--sz-4);text-decoration: none;color: var(--col-dark);}
 nav > a:hover, nav > a:focus {
   background-color: var(--col-primary);
 	color: var(--col-light);
@@ -65,16 +66,13 @@ h1 {
   font-size: 2rem;
   margin-bottom: 0;
 }
-h3 {margin-top: var(--m);}
+h3, h4 {margin-top: var(--m);}
 .skip-link {
   position: absolute;
   top: 0;
   right: 100%;
   z-index: 50;
 }
-.color-block {background-color: var(--col-primary);color: var(--col-light);}
-[aria-label="Main"] {border-bottom: 2px solid var(--col-primary);}
-[aria-label="Main"] > a {color: var(--col-dark);}
 #intro {
 	color: var(--col-dark);
 	min-height: 60vh;
@@ -87,7 +85,7 @@ h3 {margin-top: var(--m);}
   nav > a {padding: var(--sz-3);}
 }
 @media(max-width:30rem) {
-  header nav {padding: 0 var(--sz-1) 0 0;}
+  nav {padding: 0 var(--sz-1) 0 0;}
   nav > a {padding: var(--sz-3) var(--sz-2);}
 	#intro {min-height: 80vh;}
 }
