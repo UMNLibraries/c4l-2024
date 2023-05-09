@@ -5,6 +5,7 @@
   --col-dark: #222; /* dark gray */
   --col-primary: #7a0019; /* maroon */
 	--col-secondary: #fc3; /* gold */
+	--col-secondary-light: #ffc;
 
   /*  sizes */
   --sz-1: 0.3rem;
@@ -34,8 +35,8 @@ html {
 }
 
 body {
-  background-color: var(--col-dark);
-  color: var(--col-secondary);
+  background-color: var(--col-secondary-light);
+  color: var(--col-dark);
   font: 400 1rem/1.5 Georgia, serif;
   margin: 0;
 }
@@ -43,6 +44,7 @@ body {
 main {
   word-spacing: .1ch;
   padding-top: 1.5rem;
+
 }
 
 header {
@@ -54,8 +56,8 @@ header {
   width: 100%;
 }
 footer {
-  background-color: var(--col-secondary);
-  color: var(--col-dark);
+  background-color: var(--col-dark);
+  color: var(--col-light);
   border-top:  1px solid var(--col-light);
 }
 
@@ -64,7 +66,7 @@ header nav {
 }
 
 footer a {
-  color: var(--col-primary);
+  color: var(--col-secondary);
 }
 
 section, footer {
@@ -90,6 +92,9 @@ nav > a:hover, nav > a:focus {
   outline-offset: 0.1rem;
 }
 
+main a {
+	color: var(--col-primary);
+}
 
 article {
   padding: 0;
@@ -97,8 +102,6 @@ article {
 }
 
 section {
-  /*max-width: var(--txt-width);*/
-  /*margin: 0 auto var(--m) auto;*/
 	font-size: var(--sz-5);
 	border-top: 1px solid var(--col-light);
 }
@@ -107,7 +110,7 @@ section * {
 	margin: 0 auto;
 }
 
-section:nth-child(odd) {
+/*section:nth-child(odd) {
 	background-color: var(--col-primary);
 	color: var(--col-light);
 }
@@ -123,7 +126,7 @@ section:nth-child(even) {
 
 section:nth-child(even) a {
 	color: var(--col-light);
-}
+}*/
 
 p {
 	margin-bottom: var(--m);
@@ -163,24 +166,6 @@ h3 {
   color: var(--col-dark);
 }
 
-/*.img-circle {
-  border-radius: 50%;
-  float: right;
-  margin: 0 0 var(--m) var(--m);
-  max-width: 600px;
-  width: 30%;
-}
-
-.clearfix {
-  overflow: auto;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}*/
-
 #intro {
 	color: var(--col-dark);
 	min-height: 60vh;
@@ -193,16 +178,7 @@ h3 {
   nav > a {
     padding: var(--sz-3);
   }
-
-	/*.img-circle {
-    width: 50%;
-  }
-
-  .no-mobile {
-    display: none;
-  }*/
 }
-
 
 @media(max-width:30rem) {
   header nav {
