@@ -53,7 +53,6 @@ nav > a:hover, nav > a:focus {
   background-color: var(--col-primary);
 	color: var(--col-light);
   outline: 0.15rem solid var(--col-dark);
-  outline-offset: 0.1rem;
 }
 main a {color: var(--col-primary);}
 article {padding: 0;margin-bottom: var(--m);}
