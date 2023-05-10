@@ -76,7 +76,7 @@ h3, h4 {margin-top: var(--m);}
 #intro {
 	color: var(--col-dark);
 	min-height: 65vh;
-	background: center / cover no-repeat url(minneapolis.jpg), var(--col-light);
+	background: center / cover no-repeat url(minneapolis3.webp), var(--col-light);
 	padding: var(--sz-5);
 	margin-bottom: 0;
 	border-bottom: 0.1rem solid var(--col-primary);
